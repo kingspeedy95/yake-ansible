@@ -232,7 +232,6 @@ spec:
           backup:
             provider: {{ item.settings.backup.provider }}
             region: {{ item.settings.backup.region }}
-            bucketName: {{ item.settings.backup.bucket_name }}
             credentialsRef:
               apiVersion: v1
               kind: Secret
