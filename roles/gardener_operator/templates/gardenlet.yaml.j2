@@ -63,7 +63,7 @@ metadata:
   namespace: garden
 type: Opaque
 stringData:
-  {{ gardener_operator_internal_seed_backup_credentials }}
+  {{ gardener_operator_internal_seed_backup_credentials | indent(2) }}
 {% endif %}
 {% if gardener_operator_monitoring.basic_auth.username | d('') and gardener_operator_monitoring.basic_auth.password | d('') %}
 ---

@@ -47,7 +47,7 @@ metadata:
   namespace: garden
 type: Opaque
 stringData:
-  {{ gardener_operator_garden_backup_credentials }}
+  {{ gardener_operator_garden_backup_credentials | indent(2) }}
 {% endif %}
 ---
 apiVersion: v1
